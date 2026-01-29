@@ -134,7 +134,7 @@ The specifical implementation is based on the open-source project [torch_quantiz
   </details>
 
 
-## 📚 Citation
+<!-- ## 📚 Citation
 
 If you find [PTQ4ARVG](https://arxiv.org/abs/2601.21238) is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
 ```BibTeX
@@ -147,7 +147,7 @@ If you find [PTQ4ARVG](https://arxiv.org/abs/2601.21238) is useful in your resea
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2601.21238}, 
 }
-```
+``` -->
 
 ## 💙 Acknowledgments
 
