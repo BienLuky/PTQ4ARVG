@@ -50,9 +50,9 @@ def test_fid_pc(ref_batch, sample_batch):
     print("Inception Score:", evaluator.compute_inception_score(sample_acts[0]))
     print("FID:", sample_stats.frechet_distance(ref_stats))
     print("sFID:", sample_stats_spatial.frechet_distance(ref_stats_spatial))
-    # prec, recall = evaluator.compute_prec_recall(ref_acts[0], sample_acts[0])
-    # print("Precision:", prec)
-    # print("Recall:", recall)
+    prec, recall = evaluator.compute_prec_recall(ref_acts[0], sample_acts[0])
+    print("Precision:", prec)
+    print("Recall:", recall)
 
 
 class InvalidFIDException(Exception):

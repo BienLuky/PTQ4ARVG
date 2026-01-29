@@ -4,7 +4,7 @@
 
 <h5 align="center">
 
-<!-- [![arXiv](https://img.shields.io/badge/DilateQuant-2409.14307-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.14307) -->
+[![arXiv](https://img.shields.io/badge/PTQ4ARVG-2601.21238-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2601.21238)
 [![GitHub Stars](https://img.shields.io/github/stars/BienLuky/PTQ4ARVG.svg?style=social&label=Star&maxAge=60)](https://github.com/BienLuky/PTQ4ARVG)
  <br>
 
@@ -133,6 +133,23 @@ The specifical implementation is based on the open-source project [torch_quantiz
 
   </details>
 
+
+## 📚 Citation
+
+If you find [PTQ4ARVG](https://arxiv.org/abs/2601.21238) is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
+```BibTeX
+@misc{liu2026ptq4arvgposttrainingquantizationautoregressive,
+      title={PTQ4ARVG: Post-Training Quantization for AutoRegressive Visual Generation Models}, 
+      author={Xuewen Liu and Zhikai Li and Jing Zhang and Mengjuan Chen and Qingyi Gu},
+      year={2026},
+      eprint={2601.21238},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.21238}, 
+}
+```
+
 ## 💙 Acknowledgments
 
 The development of PTQ4ARVG is based on [RepQ-ViT](https://github.com/zkkli/RepQ-ViT) and [SmoothQuant](https://github.com/mit-han-lab/smoothquant). We deeply appreciate their contributions to the community.
+
