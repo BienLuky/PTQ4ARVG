@@ -12,7 +12,7 @@
 
 ## 📖 Introduction
 This repository contains the official PyTorch implementation for the paper
-*"PTQ4ARVG: Post-Training Quantization for AutoRegressive Visual Generation Models".* Our study reveals the quantization challenges of AutoRegressive Visual Generation Models (ARVG) across the channel, token, and sample dimensions. Correspondingly, we propose PTQ4ARVG, a training-free and hardware-friendly PTQ framework tailored for ARVG models.
+*"[PTQ4ARVG: Post-Training Quantization for AutoRegressive Visual Generation Models](https://arxiv.org/abs/2601.21238)".* Our study reveals the quantization challenges of AutoRegressive Visual Generation Models (ARVG) across the channel, token, and sample dimensions. Correspondingly, we propose PTQ4ARVG, a training-free and hardware-friendly PTQ framework tailored for ARVG models.
 
 To the best of our knowledge, this work is the first to propose a theoretically supported scaling-based solution for handling outliers. It also represents the first complete PTQ framework specifically designed for ARVG models.
 We hope our work will further advance the research and applicability of ARVG models.
@@ -64,7 +64,7 @@ python ./evaluation/test.py ./evaluation/VIRTUAL_imagenet256_labeled.npz /PATH/T
 ### 🛠️ Deployment
 The quantized models are deployed by utilizing [CUTLASS](https://github.com/NVIDIA/cutlass) and the same deployment toolkit of [SmoothQuant](https://github.com/mit-han-lab/smoothquant). 
 The specifical implementation is based on the open-source project [torch_quantizer](https://github.com/ThisisBillhe/torch_quantizer).
-
+The accelerated evaluation in both the repository and the paper is conducted with a sequence length of 256.
 
 ### 🖼️ Random samples 
   <details>
@@ -134,20 +134,17 @@ The specifical implementation is based on the open-source project [torch_quantiz
   </details>
 
 
-<!-- ## 📚 Citation
+## 📚 Citation
 
 If you find [PTQ4ARVG](https://arxiv.org/abs/2601.21238) is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
 ```BibTeX
-@misc{liu2026ptq4arvgposttrainingquantizationautoregressive,
-      title={PTQ4ARVG: Post-Training Quantization for AutoRegressive Visual Generation Models}, 
-      author={Xuewen Liu and Zhikai Li and Jing Zhang and Mengjuan Chen and Qingyi Gu},
-      year={2026},
-      eprint={2601.21238},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2601.21238}, 
+@article{liu2026ptq4arvg,
+  title={PTQ4ARVG: Post-Training Quantization for AutoRegressive Visual Generation Models},
+  author={Liu, Xuewen and Li, Zhikai and Zhang, Jing and Chen, Mengjuan and Gu, Qingyi},
+  journal={arXiv preprint arXiv:2601.21238},
+  year={2026}
 }
-``` -->
+```
 
 ## 💙 Acknowledgments
 
